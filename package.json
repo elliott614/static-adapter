@@ -1,0 +1,22 @@
+{
+  "name": "static-adapter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build.client": "vite build",
+    "build.static": "npm run build.client && vite build --ssr src/entry.ssr.tsx",
+    "preview": "serve dist"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6",
+    "vite": "^8.0.1",
+    "vite-tsconfig-paths": "^6.1.1"
+  },
+  "dependencies": {
+    "@builder.io/qwik": "^1.19.2",
+    "@builder.io/qwik-city": "^1.19.2"
+  }
+}
