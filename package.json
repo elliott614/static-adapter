@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "build.client": "vite build",
-    "build.static": "npm run build.client && vite build --ssr src/entry.ssr.tsx",
+    "build.static": "npm run build.client && vite build -c adapters/static/vite.config.ts",
     "preview": "serve dist"
   },
   "devDependencies": {
